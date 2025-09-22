@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio 1 | Aprendizaje Textil</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../../index.html" class="logo">
+            <img src="./assets/img/logo.png" alt="Logo de la empresa">
+        </a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#evaluacion">Evaluación</a></li>
+                <li><a href="#progreso">Progreso</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="inicio" class="section hero">
+            <h1>Tema 1: Historia de las Fibras Naturales</h1>
+            <p>Descubre el origen y la evolución de los materiales textiles más antiguos del mundo.</p>
+        </section>
+
+        <section id="contenido" class="section">
+            <h2>Fibras de Origen Vegetal</h2>
+            <p>El algodón, el lino y el cáñamo son ejemplos de fibras vegetales. Su cultivo y uso han moldeado la historia de la humanidad, desde la vestimenta hasta la navegación.</p>
+            <p>Aquí puedes agregar más contenido educativo, imágenes, videos, etc.</p>
+        </section>
+
+        <section id="evaluacion" class="section evaluation-section">
+            <h2>Evaluación: Historia Textil</h2>
+            <form id="evaluation-form" class="form-container">
+                <div class="form-group">
+                    <label for="q1">1. ¿Qué fibra natural es conocida como el "oro blanco"?</label>
+                    <input type="text" id="q1" name="q1" required>
+                </div>
+                <div class="form-group">
+                    <label for="q2">2. ¿De qué planta se obtiene el lino?</label>
+                    <input type="text" id="q2" name="q2" required>
+                </div>
+                <button type="submit" class="button">Enviar Evaluación</button>
+            </form>
+        </section>
+
+        <section id="progreso" class="section progress-section">
+            <h2>Mi Progreso</h2>
+            <p>Aquí se mostrará tu progreso de lectura y las evaluaciones completadas.</p>
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <p id="progress-text">0% completado</p>
+            <button id="export-csv" class="button button-secondary">Exportar Progreso a CSV</button>
+            <button id="print-pdf" class="button button-secondary">Imprimir Progreso en PDF</button>
+        </section>
+
+        <section id="contacto" class="section contact-section">
+            <h2>Formulario de Contacto</h2>
+            <form id="contact-form" class="form-container">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje o Solicitud:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file-upload">Adjuntar Archivo:</label>
+                    <input type="file" id="file-upload" name="file-upload">
+                </div>
+                <button type="submit" class="button">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Learning-Textil-JTX. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
